@@ -1,3 +1,51 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+.nav-container{
+   
+    overflow: hidden;
+    background-color: darkgreen;
+}
+.nav-container a{
+    color: rgb(135, 238, 135);
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 14px;
+}
+.nav-container a:hover{
+    background-color: lightgray;
+    color: black;
+}
+.nav-container a:active{
+    background-color:black ;
+    color: white;
+}
+.nav-container .icon{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .nav-container a:not(:first-child) {display: none;}
+    .nav-container a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav-container.responsive {position: relative;}
+    .nav-container.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-container.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  
